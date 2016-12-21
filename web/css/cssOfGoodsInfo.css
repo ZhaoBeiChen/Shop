@@ -1,0 +1,58 @@
+
+.GoodsInfo_bg {
+    width: 900px;
+    height: 600px;
+    border: 2px solid black;
+    margin-left: 48px;
+    margin-top: 150px;
+}
+
+.GoodsInfo_Image {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    margin-left: 48px;
+    margin-top: 48px;
+}
+
+.GoodsInfo_Infos {
+    width: 450px;
+    height: 40px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    float: left;
+    margin-left: 48px;
+    margin-top: 23px;
+    font-weight: 900;
+    font-family: serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.GoodsInfo_num {
+    width: 200px;
+    height: 40px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    float: left;
+    margin-left: 48px;
+    margin-top: 23px;
+    font-weight: 900;
+    font-family: serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.GoodsInfo_addButton {
+    width: 200px;
+    height: 40px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-left: 48px;
+    margin-top: 23px;
+    font-weight: 900;
+    font-family: serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: #d9534f;
+}

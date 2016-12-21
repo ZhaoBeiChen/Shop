@@ -1,0 +1,93 @@
+
+.Login_bg_01 {
+    border: 2px solid black;
+    width: 1000px;
+    height: 850px;
+    background-color: white;
+    margin-left: -4px;
+    margin-top: 75px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}
+
+.Login_bg_02 {
+    border: 2px solid black;
+    width: 1000px;
+    height: 60px;
+    background-color: white;
+    margin-top: 25px;
+    margin-left: -4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}
+
+.Login_bg_03 {
+    border: 2px solid black;
+    width: 1000px;
+    height: 500px;
+    background-color: white;
+    margin-left: -4px;
+    margin-top: 180px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}
+
+.Login_bg_04 {
+    border: 2px solid black;
+    width: 400px;
+    height: 450px;
+    background: white;
+    margin-top: 25px;
+    margin-left: 570px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}
+
+.Login_bg_05 {
+    border: 2px solid black;
+    width: 400px;
+    height: 50px;
+    background-color: white;
+    margin-left: -4px;
+    margin-top: -4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}
+
+.Login_bg_05_header {
+    font-size: 25px;
+    margin-top: 7px;
+    margin-left: 160px;
+
+}
+
+.Login_form {
+    width:350px;
+    height: 250px;
+    border: 2px solid black;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}
+
+.Login_input {
+    height: 20px;
+    margin-left: 45px;
+    margin-top: 50px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}
+
+.Login_submit {
+    width: 80px;
+    height: 40px;
+    margin-left: 130px;
+    margin-top: 50px;
+    border: 2px solid black;
+    font-family: serif;
+    font-size: 15px;
+    font-weight: 900;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}

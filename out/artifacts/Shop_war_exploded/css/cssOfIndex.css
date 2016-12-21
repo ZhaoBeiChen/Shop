@@ -1,0 +1,87 @@
+
+.bg_01 {
+    border: 2px solid black;
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+    margin: 0 auto;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}
+
+.bg_02 {
+    position: fixed;
+    border: 2px solid black;
+    width: 1000px;
+    height: 55px;
+    background-color: white;
+    margin-left: -4px;
+    margin-top: -10px;
+    font-weight: 900;
+    font-family: serif;
+    font-size: 16px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}
+
+.bg_03 {
+    border: 2px solid black;
+    width: 950px;
+    height: 400px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 75px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}
+
+.bg_04 {
+    border: 2px solid black;
+    width: 950px;
+    height: 400px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 25px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}
+
+.bg_05 {
+    border: 2px solid black;
+    width: 1000px;
+    height: 80px;
+    background-color: white;
+    margin-left: -4px;
+    margin-top: 25px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}
+
+.bg_04_01 {
+    border: 2px solid black;
+    width: 437.5px;
+    height: 162.5px;
+    background-color: white;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+}
+
+.header {
+    width: 100px;
+    height: 30px;
+    margin: 12px 0px 0px 25px;
+    font-family: serif;
+    font-size: 25px;
+    font-weight: 900;
+    float: left;
+}
+
+.bg_02_bt {
+    border: 2px;
+    background-color: white;
+    width: 80px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 5px;
+    text-align: center;
+}

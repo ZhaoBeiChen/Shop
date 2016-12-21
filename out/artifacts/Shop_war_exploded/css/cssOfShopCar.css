@@ -1,0 +1,30 @@
+
+.car_bg_01 {
+    border: 2px solid black;
+    width: 950px;
+    height: 850px;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+.car_bg_02 {
+    border: 2px solid black;
+    width: 1000px;
+    height: 50px;
+    margin-left: -2px;
+    margin-top: 24px;
+}
+
+.car_bg_03 {
+    border: 2px solid black;
+    width: 950px;
+    height: 50px;
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+.car_bg_03_header {
+    font-size: 25px;
+    margin-top: 7px;
+    margin-left: 415px;
+}
