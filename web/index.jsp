@@ -38,11 +38,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+<% request.getSession().setAttribute("NowPage", "index"); %>
+<% request.getSession().setAttribute("shopClass", "all");%>
 <div class="bg_01">
     <div class="bg_02">
-        <p class="header">Shop</p>
-        <button type="button" class="bg_02_bt" style="margin-left: 150px" onclick="javascript:window.location.href='index.jsp'" value="Home" name="Home">Home</button>
-        <button type="button" class="bg_02_bt" onclick="javascript:window.location.href='GoodsPage.jsp'" value="Mall" name="Mall">Mall</button>
+        <p class="header">GameShop</p>
+        <button type="button" class="bg_02_bt" style="margin-left: 150px" onclick="javascript:window.location.href='index.jsp'">Home</button>
+        <button type="button" class="bg_02_bt" onclick="javascript:window.location.href='GoodsPage.jsp'">Mall</button>
         <button type="button" class="bg_02_bt">Category</button>
         <button type="button" class="bg_02_bt">Activity</button>
         <button type="button" class="bg_02_bt">About</button>
@@ -51,7 +53,7 @@
             if(userName != null && status.equals("yes")){
                 %>
         <a style="margin-left: 150px" href="PersonalInfo.jsp" ><%=userName%></a>
-        <a style="margin-left: 5px">Logout</a>
+        <a style="margin-left: 5px" href="controller/Logout" methods="get">Logout</a>
             <%}
             else {
                 %>

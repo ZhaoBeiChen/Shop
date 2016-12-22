@@ -38,7 +38,7 @@
   <body>
     <div class="bg_01">
 		<div class="bg_02">
-			<p class="header">Shop</p>
+			<p class="header">GameShop</p>
 			<button type="button" class="bg_02_bt" style="margin-left: 150px">Home</button>
 			<button type="button" class="bg_02_bt">Mall</button>
 			<button type="button" class="bg_02_bt">Category</button>

@@ -1,14 +1,8 @@
-<!--<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>-->
-<!--<%-->
-<!--String path = request.getContextPath();-->
-<!--String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";-->
-<!--%>-->
+<!--<%@ page contentType="text/html; charset=UTF-8" import="java.util.*"  language="java" %>-->
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">-->
 <html>
   <head>
-    <base href="<%=basePath%>">
-    
     <title>My ShopCar</title>
     
 	<meta http-equiv="pragma" content="no-cache">
@@ -38,13 +32,25 @@
   <body>
     <div class="bg_01">
 		<div class="bg_02">
-			<p class="header">Shop</p>
-			<button type="button" class="bg_02_bt" style="margin-left: 150px">Home</button>
-			<button type="button" class="bg_02_bt">Mall</button>
+			<p class="header">GameShop</p>
+			<button type="button" class="bg_02_bt" style="margin-left: 150px" onclick="javascript:window.location.href='index.jsp'">Home</button>
+			<button type="button" class="bg_02_bt" onclick="javascript:window.location.href='GoodsPage.jsp'">Mall</button>
 			<button type="button" class="bg_02_bt">Category</button>
 			<button type="button" class="bg_02_bt">Activity</button>
 			<button type="button" class="bg_02_bt">About</button>
-			<button type="button" class="bg_02_bt" style="margin-left: 150px">Login</button>
+			<!--<% String userName = (String) session.getAttribute("userName");-->
+				<!--String status = (String) session.getAttribute("status");-->
+				<!--if(userName != null && status.equals("yes")){-->
+			<!--%>-->
+			<!--<a style="margin-left: 150px" href="PersonalInfo.jsp" ><%=userName%></a>-->
+			<!--<a style="margin-left: 5px" href="controller/Logout" methods="get">Logout</a>-->
+			<!--<%}-->
+			<!--else {-->
+			<!--%>-->
+			<a style="margin-left: 150px" href="Login.jsp" >Login</a>
+			<!--<%-->
+				<!--}-->
+			<!--%>-->
 		</div>
 		<div class="car_bg_01">
 			<div class="car_bg_03">

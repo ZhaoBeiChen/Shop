@@ -41,12 +41,14 @@ public class Login extends HttpServlet {
             if (check == 1) {
                 userCheck = userCheck.getUserInfo(userName);
                 session.setAttribute("password", userCheck.getPaswsword());
-                session.setAttribute("sex", userCheck.getSex());
+                if(userCheck.getSex().equals("1"))
+                    session.setAttribute("sex", "Male");
+                else session.setAttribute("sex", "Female");
                 session.setAttribute("phone", userCheck.getPhoneNumber());
                 session.setAttribute("email", userCheck.getEmail());
                 session.setAttribute("address", userCheck.getAddress());
                 session.setAttribute("status", "yes");
-                resp.sendRedirect("../index.jsp");
+                resp.sendRedirect("../"+session.getAttribute("NowPage")+".jsp");
             } else if (check == 0) {
                 result = "密码有误，请重新输入！";
                 req.setAttribute("message", result);

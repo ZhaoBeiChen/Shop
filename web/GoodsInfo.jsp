@@ -1,3 +1,5 @@
+<%@ page import="model.struct.Goods" %>
+<%@ page contentType="text/html; charset=UTF-8"  language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,40 +33,47 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+<% request.getSession().setAttribute("NowPage","GoodsInfo"); %>
 <div class="bg_01">
     <div class="bg_02">
-        <p class="header">Shop</p>
-        <button type="button" class="bg_02_bt" style="margin-left: 150px">Home</button>
-        <button type="button" class="bg_02_bt">Mall</button>
+        <p class="header">GameShop</p>
+        <button type="button" class="bg_02_bt" style="margin-left: 150px" onclick="javascript:window.location.href='index.jsp'">Home</button>
+        <button type="button" class="bg_02_bt" onclick="javascript:window.location.href='GoodsPage.jsp'">Mall</button>
         <button type="button" class="bg_02_bt">Category</button>
         <button type="button" class="bg_02_bt">Activity</button>
         <button type="button" class="bg_02_bt">About</button>
-        <!--<% String userName = (String) session.getAttribute("userName");-->
-        <!--String status = (String) session.getAttribute("status");-->
-        <!--if(userName != null && status.equals("yes")){-->
-        <!--%>-->
-        <!--<a style="margin-left: 150px" href="PersonalInfo.jsp" ><%=userName%></a>-->
-        <!--<%}-->
-        <!--else {-->
-        <!--%>-->
+        <% String userName = (String) session.getAttribute("userName");
+        String status = (String) session.getAttribute("status");
+        if(userName != null && status.equals("yes")){
+        %>
+        <a style="margin-left: 150px" href="PersonalInfo.jsp" ><%=userName%></a>
+        <a style="margin-left: 5px" href="controller/Logout" methods="get">Logout</a>
+        <%}
+        else {
+        %>
         <a style="margin-left: 150px" href="Login.jsp" >Login</a>
-        <!--<%-->
-        <!--}-->
-        <!--%>-->
+        <%
+        }
+        %>
     </div>
+    <% String goodsid = (String)request.getSession().getAttribute("goodsID");
+        Goods good= new Goods();
+        good = good.getGoodsInfo(goodsid);
+    %>
     <div class="GoodsInfo_bg">
-        <div class="GoodsInfo_Image" style="float: left">
+        <div class="GoodsInfo_Image" style="background-image:url(<%=good.getGoodsURL()%>_big.jpg); float: left">
 
         </div>
-        <p class="GoodsInfo_Infos" style="margin-top: 48px">Chinese Paladin 6</p>
-        <p class="GoodsInfo_Infos"></p>
-        <p class="GoodsInfo_Infos"></p>
-        <form action="#" method="post" name="addToCar">
-        <input type="number" class="GoodsInfo_num" value="0" min="0" max="99" name="goodsNum"/>
+        <p class="GoodsInfo_Infos" style="margin-top: 48px"><font color="gray">GameName:</font><%=good.getGoodsID()%></p>
+        <p class="GoodsInfo_Infos"><font color="gray">GameType:</font><%=good.getClassID()%></p>
+        <p class="GoodsInfo_Infos"><font color="gray">Price:</font><%=good.getPrice()%>￥</p>
+        <form action="controller/DelAddShopCar" method="post" name="addToCar">
+            <input type="hidden" name="goodsInfo_goodsid" value="<%=good.getGoodsID()%>" />
+            <input type="number" class="GoodsInfo_num" value="0" min="0" max="99" name="goodsInfo_num"/>
             <input type="submit" value="Add to ShopCar" class="GoodsInfo_addButton"/>
         </form>
-        <p class="GoodsInfo_Infos" style="clear: both; text-align: left">Date Issued：</p>
-        <p class="GoodsInfo_Infos" style="width: 800px; height: 100px; text-align: left">Goods Description:</p>
+        <p class="GoodsInfo_Infos" style="clear: both; text-align: left"><font color="gray">Date Issued:</font><%=good.getAddDate()%></p>
+        <p class="GoodsInfo_Infos" style="width: 800px; height: 100px; text-align: left"><font color="gray">Goods Description:</font><%=good.getGoodsIntrduce()%></p>
     </div>
     <div class="bg_05" style="margin-top: 180px">
 

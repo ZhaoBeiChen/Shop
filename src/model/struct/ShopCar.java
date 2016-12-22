@@ -179,7 +179,30 @@ public class ShopCar implements databaseCon,dataBaseDestory {
         }finally {
             destoryCon(con,pre,result);
         }
+    }
 
+    public ShopCar ifCarExist(String carID){
+        ShopCar car = new ShopCar();
+        String sql = "select * from tb_shopcar where cartID=?";
+        try {
+            pre = connecting.getConnection(con).prepareStatement(sql);
+            pre.setString(1,carID);
+            result = pre.executeQuery();
+            if(result.next()){
+                car.setGoodsID(carID);
+                car.setGoodsID(result.getString("goodsid"));
+                car.setNum(result.getInt("num"));
+                car.setPrice(result.getDouble("marketPrice"));
+                car.setMemberID(result.getString("memberid"));
+                return car;
+            }
+            else {
+                return null;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     public double totalprice(String memberID){

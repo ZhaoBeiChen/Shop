@@ -12,4 +12,40 @@
         <servlet-name>LoginCheck</servlet-name>
         <url-pattern>/controller/Login</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>controller.Logout</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/controller/Logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DelShopClass</servlet-name>
+        <servlet-class>controller.DelShopClass</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DelShopClass</servlet-name>
+        <url-pattern>/controller/DelShopClass</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DelGoodsInfo</servlet-name>
+        <servlet-class>controller.DelGoodsInfo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DelGoodsInfo</servlet-name>
+        <url-pattern>/controller/DelGoodsInfo</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DelAddShopCar</servlet-name>
+        <servlet-class>controller.DelAddShopCar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DelAddShopCar</servlet-name>
+        <url-pattern>/controller/DelAddShopCar</url-pattern>
+    </servlet-mapping>
 </web-app>
