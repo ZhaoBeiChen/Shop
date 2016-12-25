@@ -131,7 +131,7 @@ public class ShopCar implements databaseCon,dataBaseDestory {
 
     public void changeCarInfo(ShopCar car){
         if(checkInfo(car)!=-1){
-            String sql = "update tb_shopcar set goodsid=?, num=?, marketprice=?, memberid=?, where cartid=?";
+            String sql = "update tb_shopcar set goodsid=?, num=?, marketprice=?, memberid=? where cartid=?";
             try {
                 pre = connecting.getConnection(con).prepareStatement(sql);
                 pre.setString(1, car.getGoodsID());
@@ -189,7 +189,7 @@ public class ShopCar implements databaseCon,dataBaseDestory {
             pre.setString(1,carID);
             result = pre.executeQuery();
             if(result.next()){
-                car.setGoodsID(carID);
+                car.setCarID(carID);
                 car.setGoodsID(result.getString("goodsid"));
                 car.setNum(result.getInt("num"));
                 car.setPrice(result.getDouble("marketPrice"));
@@ -224,6 +224,25 @@ public class ShopCar implements databaseCon,dataBaseDestory {
             e.printStackTrace();
             return 0.0;
         }
+    }
+
+    public boolean ifCarEmpty(String userID){
+        String sql = "select * from tb_shopcar where memberid=?";
+        try {
+            pre = connecting.getConnection(con).prepareStatement(sql);
+            pre.setString(1,userID);
+            result = pre.executeQuery();
+            if(result.next()){
+                return true;
+            }
+            else {
+                return false;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+
     }
 
     @Override

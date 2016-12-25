@@ -1,5 +1,7 @@
 <!--<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>-->
 <%@ page import="java.lang.*" %>
+<%@ page import="model.struct.Order" %>
+<%@ page import="model.struct.Goods" %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -45,7 +47,8 @@
 				String status = (String) session.getAttribute("status");
 				if(userName != null && status.equals("yes")){
 			%>
-			<a style="margin-left: 150px" href="PersonalInfo.jsp" ><%=userName%></a>
+			<a style="margin-left: 80px;" href="PersonalInfo.jsp" ><%=userName%></a>
+			<a style="margin-left: 5px;"  href="ShopCar.jsp" >ShopCar</a>
 			<a style="margin-left: 5px" href="controller/Logout" methods="get">Logout</a>
 			<%}
 			else {
@@ -64,18 +67,27 @@
 				<p class="PersonalInfo_info"><font color="gray">Gender:</font><%=session.getAttribute("sex")%></p>
 				<p class="PersonalInfo_info"><font color="gray">Phone:</font><%=session.getAttribute("phone")%></p>
 				<p class="PersonalInfo_info"><font color="gray">Email:</font><%=session.getAttribute("email")%></p>
-				<p class="PersonalInfo_info"><font color="gray">Address:</font><%=session.getAttribute("address")%></p>
+				<p class="PersonalInfo_info" style="width: 846px"><font color="gray">Address:</font><%=session.getAttribute("address")%></p>
 			</div>
 			<div class="personalinfo_bg_01" style="height: 150px; margin-top: 25px">
 				<p class="PersonalInfo_OrderHeader">My Order</p>
-				<div class="PersonalInfo_OrderSum"></div>
-				<div class="PersonalInfo_OrderSum"></div>
-				<div class="PersonalInfo_OrderSum"></div>
+				<%
+					ArrayList<Order> orderList = new ArrayList<Order>();
+					Order order = new Order();
+					orderList = order.getOrder(userName);
+					Goods good = new Goods();
+					for(int i=0; i<orderList.size(); i++){
+					    good = good.getGoodsInfo(orderList.get(i).getGoodsID());
+				%>
+				<div class="PersonalInfo_OrderSum" style="background-image: url(<%=good.getGoodsURL()%>_small.jpg)"></div>
+				<%
+					}
+				%>
 			</div>
 			<div class="personalinfo_bg_01" style="height: 50px; margin-top: 25px">
-
+				<a class="PersonalInfo_a" href="PersonalInfoChange.jsp">Personal Information Change</a>
+				<a class="PersonalInfo_a" href="PersonalPasswdChange.jsp">Password Change</a>
 			</div>
-
 		</div>
 		<div class="car_bg_02">
 

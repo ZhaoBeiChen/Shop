@@ -33,11 +33,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+<% request.getSession().setAttribute("NowPage","GoodsInfo"); %>
 <div class="bg_01">
     <div class="bg_02">
         <p class="header">GameShop</p>
-        <button type="button" class="bg_02_bt" style="margin-left: 150px">Home</button>
-        <button type="button" class="bg_02_bt">Mall</button>
+        <button type="button" class="bg_02_bt" style="margin-left: 150px" onclick="javascript:window.location.href='index.jsp'">Home</button>
+        <button type="button" class="bg_02_bt" onclick="javascript:window.location.href='GoodsPage.jsp'">Mall</button>
         <button type="button" class="bg_02_bt">Category</button>
         <button type="button" class="bg_02_bt">Activity</button>
         <button type="button" class="bg_02_bt">About</button>
@@ -45,7 +46,8 @@
         String status = (String) session.getAttribute("status");
         if(userName != null && status.equals("yes")){
         %>
-        <a style="margin-left: 150px" href="PersonalInfo.jsp" ><%=userName%></a>
+        <a style="margin-left: 80px" href="PersonalInfo.jsp" ><%=userName%></a>
+        <a style="margin-left: 5px" href="ShopCar.jsp" >ShopCar</a>
         <a style="margin-left: 5px" href="controller/Logout" methods="get">Logout</a>
         <%}
         else {
@@ -68,7 +70,7 @@
         <p class="GoodsInfo_Infos"><font color="gray">Price:</font><%=good.getPrice()%>￥</p>
         <form action="controller/DelAddShopCar" method="post" name="addToCar">
             <input type="hidden" name="goodsInfo_goodsid" value="<%=good.getGoodsID()%>" />
-            <input type="number" class="GoodsInfo_num" value="0" min="0" max="99" name="goodsInfo_num"/>
+            <input type="number" class="GoodsInfo_num" value="1" min="1" max="99" name="goodsInfo_num"/>
             <input type="submit" value="Add to ShopCar" class="GoodsInfo_addButton"/>
         </form>
         <p class="GoodsInfo_Infos" style="clear: both; text-align: left"><font color="gray">Date Issued:</font><%=good.getAddDate()%></p>

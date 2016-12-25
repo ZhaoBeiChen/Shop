@@ -18,6 +18,7 @@ import java.io.IOException;
 public class DelAddShopCar extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        request.setCharacterEncoding("UTF-8");
         HttpSession session = request.getSession();
         if(session.getAttribute("status").toString().equals("yes")) {
             String goodsid = request.getParameter("goodsInfo_goodsid");
@@ -33,7 +34,10 @@ public class DelAddShopCar extends HttpServlet {
             car.setMemberID(memberID);
             if (car.ifCarExist(car.getCarID()) != null) {
                 car = car.ifCarExist(car.getCarID());
+                System.out.println(num);
+                System.out.println(car.getNum());
                 num = num + car.getNum();
+                System.out.println(num);
                 car.setNum(num);
                 car.changeCarInfo(car);
             } else {

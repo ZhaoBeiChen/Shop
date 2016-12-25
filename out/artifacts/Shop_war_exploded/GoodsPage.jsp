@@ -38,7 +38,7 @@
     <div class="bg_02">
         <p class="header">GameShop</p>
         <button type="button" class="bg_02_bt" style="margin-left: 150px" onclick="javascript:window.location.href='index.jsp'">Home</button>
-        <button type="button" class="bg_02_bt">Mall</button>
+        <button type="button" class="bg_02_bt" onclick="javascript:window.location.href='GoodsPage.jsp'">Mall</button>
         <button type="button" class="bg_02_bt">Category</button>
         <button type="button" class="bg_02_bt">Activity</button>
         <button type="button" class="bg_02_bt">About</button>
@@ -46,7 +46,8 @@
         String status = (String) session.getAttribute("status");
         if(userName != null && status.equals("yes")){
         %>
-        <a style="margin-left: 140px" href="PersonalInfo.jsp" ><%=userName%></a>
+        <a style="margin-left: 80px" href="PersonalInfo.jsp" ><%=userName%></a>
+        <a style="margin-left: 5px" href="ShopCar.jsp" >ShopCar</a>
         <a style="margin-left: 5px" href="controller/Logout" methods="get">Logout</a>
         <%}
         else {
@@ -91,7 +92,7 @@
             <div class="goodsHeader">
                 <form action="controller/DelGoodsInfo" method="get">
                     <input type="hidden" name="goodsid" value="<%=allGoods.get(i).getGoodsID()%>" />
-                    <input type="submit" class="goodsHeadertext" value="<%=allGoods.get(i).getGoodsID()%>" />
+                    <input type="submit" class="goodsHeadertext" value="<%=allGoods.get(i).getGoodsID()%>"/>
                 </form>
             </div>
         </div>

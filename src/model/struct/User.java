@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 /**
  * Created by asus-pc on 2016/12/16.
@@ -14,7 +15,7 @@ public class User implements dataBaseDestory,databaseCon {
     protected String userID;
     protected String sex;
     protected String paswsword;
-    protected int phoneNumber;
+    protected long phoneNumber;
     protected String email;
     protected String address;
     ResultSet result = null;		//结果集对象
@@ -32,7 +33,7 @@ public class User implements dataBaseDestory,databaseCon {
         return paswsword;
     }
 
-    public int getPhoneNumber() {
+    public long getPhoneNumber() {
         return phoneNumber;
     }
 
@@ -44,7 +45,7 @@ public class User implements dataBaseDestory,databaseCon {
         return address;
     }
 
-    private void setUserID(String userID) {
+    public void setUserID(String userID) {
         this.userID = userID;
     }
 
@@ -56,7 +57,7 @@ public class User implements dataBaseDestory,databaseCon {
         this.paswsword = paswsword;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
@@ -93,7 +94,7 @@ public class User implements dataBaseDestory,databaseCon {
         if(user.getPaswsword().equals("")){
             return -1;
         }
-        if(Integer.toString(user.getPhoneNumber()).equals(null) ){
+        if(Long.toString(user.getPhoneNumber()).equals(null) ){
             user.setPhoneNumber(0);
         }
         if(user.getEmail().equals("")){
@@ -114,7 +115,7 @@ public class User implements dataBaseDestory,databaseCon {
             pre.setString(1, user.getUserID());
             pre.setString(2, user.getSex());
             pre.setString(3, user.getPaswsword());
-            pre.setString(4, Integer.toString(user.getPhoneNumber()));
+            pre.setString(4, Long.toString(user.getPhoneNumber()));
             pre.setString(5, user.getEmail());
             pre.setString(6, user.getAddress());
             result = pre.executeQuery();
@@ -152,7 +153,7 @@ public class User implements dataBaseDestory,databaseCon {
                 pre = connecting.getConnection(con).prepareStatement(sql);
                 pre.setString(1, user.getPaswsword());
                 pre.setString(2, user.getSex());
-                pre.setString(3, Integer.toString(user.getPhoneNumber()));
+                pre.setString(3, Long.toString(user.getPhoneNumber()));
                 pre.setString(4, user.getEmail());
                 pre.setString(5, user.getAddress());
                 pre.setString(6, user.getUserID());
@@ -202,7 +203,7 @@ public class User implements dataBaseDestory,databaseCon {
                 user.setUserID(result.getString("memberID"));
                 user.setPaswsword(result.getString("password"));
                 user.setSex(result.getString("sex"));
-                user.setPhoneNumber(Integer.parseInt(result.getString("phone")));
+                user.setPhoneNumber(Long.parseLong(result.getString("phone")));
                 user.setEmail(result.getString("emails"));
                 user.setAddress(result.getString("address"));
                 return user;
@@ -218,6 +219,30 @@ public class User implements dataBaseDestory,databaseCon {
         }
     }
 
+    public ArrayList getUserList(){
+        User user;
+        ArrayList<User> userList = new ArrayList<User>();
+        String sql = "select * from tb_user";
+        try {
+            pre = connecting.getConnection(con).prepareStatement(sql);
+            result = pre.executeQuery();
+            while (result.next()){
+                user = new User();
+                user.setUserID(result.getString("memberID"));
+                user.setPaswsword(result.getString("password"));
+                user.setSex(result.getString("sex"));
+                user.setPhoneNumber(Long.parseLong(result.getString("phone")));
+                user.setEmail(result.getString("emails"));
+                user.setAddress(result.getString("address"));
+                userList.add(user);
+            }
+            return userList;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+
+    }
 
     @Override
     public void destoryCon(Connection con, PreparedStatement pre, ResultSet res) {

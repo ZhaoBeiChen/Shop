@@ -12,7 +12,9 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file:///production/Shop" />
+    <output-test url="file:///test/Shop" />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
@@ -23,6 +25,7 @@
         <CLASSES>
           <root url="jar://F:/JDK8/jre/lib/ext/servlet-api.jar!/" />
         </CLASSES>
+        <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
@@ -31,6 +34,7 @@
         <CLASSES>
           <root url="jar://D:/Oracle11g/product/11.2.0/dbhome_1/jdbc/lib/ojdbc6_g.jar!/" />
         </CLASSES>
+        <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>

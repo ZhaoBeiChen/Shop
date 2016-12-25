@@ -21,10 +21,11 @@ public class Logout extends HttpServlet {
 
         HttpSession session = request.getSession();
         session.setAttribute("status","no");
-        if(!session.getAttribute("NowPage").equals("PersonalInfo")) {
-            response.sendRedirect("../index.jsp");
-        }else {
-            response.sendRedirect("../" + session.getAttribute("NowPage") + ".jsp");
-        }
+//        if(!session.getAttribute("NowPage").equals("PersonalInfo")) {
+//            response.sendRedirect("../index.jsp");
+//        }else {
+//            response.sendRedirect("../" + session.getAttribute("NowPage") + ".jsp");
+//        }
+        response.sendRedirect("../index.jsp");
     }
 }

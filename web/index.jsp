@@ -40,6 +40,11 @@
 <body>
 <% request.getSession().setAttribute("NowPage", "index"); %>
 <% request.getSession().setAttribute("shopClass", "all");%>
+<%
+    if(request.getSession().getAttribute("status") == null) {
+        request.getSession().setAttribute("status", "no");
+    }
+%>
 <div class="bg_01">
     <div class="bg_02">
         <p class="header">GameShop</p>
@@ -52,7 +57,8 @@
             String status = (String) session.getAttribute("status");
             if(userName != null && status.equals("yes")){
                 %>
-        <a style="margin-left: 150px" href="PersonalInfo.jsp" ><%=userName%></a>
+        <a style="margin-left: 80px" href="PersonalInfo.jsp" ><%=userName%></a>
+        <a style="margin-left: 5px" href="ShopCar.jsp" >ShopCar</a>
         <a style="margin-left: 5px" href="controller/Logout" methods="get">Logout</a>
             <%}
             else {

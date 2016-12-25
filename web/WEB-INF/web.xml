@@ -48,4 +48,94 @@
         <servlet-name>DelAddShopCar</servlet-name>
         <url-pattern>/controller/DelAddShopCar</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DelChangeShopCarNum</servlet-name>
+        <servlet-class>controller.DelChangeShopCarNum</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DelChangeShopCarNum</servlet-name>
+        <url-pattern>/controller/DelChangeShopCarNum</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DelDeleteShopCar</servlet-name>
+        <servlet-class>controller.DelDeleteShopCar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DelDeleteShopCar</servlet-name>
+        <url-pattern>/controller/DelDeleteShopCar</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DelPlaceTheOrder</servlet-name>
+        <servlet-class>controller.DelPlaceTheOrder</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DelPlaceTheOrder</servlet-name>
+        <url-pattern>/controller/DelPlaceTheOrder</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DelPersonalInfoChange</servlet-name>
+        <servlet-class>controller.DelPersonalInfoChange</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DelPersonalInfoChange</servlet-name>
+        <url-pattern>/controller/DelPersonalInfoChange</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DelPersonalPasswdChange</servlet-name>
+        <servlet-class>controller.DelPersonalPasswdChange</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DelPersonalPasswdChange</servlet-name>
+        <url-pattern>/controller/DelPersonalPasswdChange</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DelRegister</servlet-name>
+        <servlet-class>controller.DelRegister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DelRegister</servlet-name>
+        <url-pattern>/controller/DelRegister</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>M_DelShopClass</servlet-name>
+        <servlet-class>controller.manage.M_DelShopClass</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>M_DelShopClass</servlet-name>
+        <url-pattern>/controller/manage/M_DelShopClass</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>M_DelManageInfo</servlet-name>
+        <servlet-class>controller.manage.DelManageInfo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>M_DelManageInfo</servlet-name>
+        <url-pattern>/controller/manage/DelManageInfo</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>M_DelPersonalInfoChange</servlet-name>
+        <servlet-class>controller.manage.M_DelPersonalInfoChange</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>M_DelPersonalInfoChange</servlet-name>
+        <url-pattern>/controller/manage/M_DelPersonalInfoChange</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>M_DelDeleteUser</servlet-name>
+        <servlet-class>controller.manage.M_DelDeleteUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>M_DelDeleteUser</servlet-name>
+        <url-pattern>/controller/manage/M_DelDeleteUser</url-pattern>
+    </servlet-mapping>
 </web-app>

@@ -46,7 +46,8 @@
         String status = (String) session.getAttribute("status");
         if(userName != null && status.equals("yes")){
         %>
-        <a style="margin-left: 140px" href="PersonalInfo.jsp" ><%=userName%></a>
+        <a style="margin-left: 80px" href="PersonalInfo.jsp" ><%=userName%></a>
+        <a style="margin-left: 5px" href="ShopCar.jsp" >ShopCar</a>
         <a style="margin-left: 5px" href="controller/Logout" methods="get">Logout</a>
         <%}
         else {
@@ -91,7 +92,7 @@
             <div class="goodsHeader">
                 <form action="controller/DelGoodsInfo" method="get">
                     <input type="hidden" name="goodsid" value="<%=allGoods.get(i).getGoodsID()%>" />
-                    <input type="submit" class="goodsHeadertext" value="<%=allGoods.get(i).getGoodsID()%>" />
+                    <input type="submit" class="goodsHeadertext" value="<%=allGoods.get(i).getGoodsID()%>"/>
                 </form>
             </div>
         </div>

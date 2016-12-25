@@ -1,8 +1,8 @@
 
 .PersonalInfo_bg_01 {
     border: 2px solid black;
-    width: 900px;
-    margin-left: 25px;
+    width: 950px;
+    margin-left: 23px;
 }
 
 .PersonalInfo_HeadImg {
@@ -48,4 +48,9 @@
     margin-left: 13px;
     margin-top: 3px;
     float: left;
+}
+
+.PersonalInfo_a {
+    margin-left: 23px;
+    line-height: 50px;
 }

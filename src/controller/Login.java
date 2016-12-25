@@ -1,4 +1,5 @@
 package controller;
+import model.struct.Admin;
 import model.struct.User;
 
 import javax.servlet.ServletException;
@@ -20,15 +21,16 @@ public class Login extends HttpServlet {
         String result = "";
         String userName = req.getParameter("userID");
         String passWord = req.getParameter("password");
-
         if((userName=="")||(userName==null)||(userName.length()>30)){
             result = "请输入用户名（不能超过30个字符！）";
             req.setAttribute("message",result);
+            System.out.println(1);
             resp.sendRedirect("../Login.jsp");
         }
         else if((passWord=="")||(passWord==null)||(passWord.length()>20)){
             result = "请输入密码（不能超过20个字符！）";
             req.setAttribute("message",result);
+            System.out.println(2);
             resp.sendRedirect("../Login.jsp");
         }
         else {
@@ -37,6 +39,15 @@ public class Login extends HttpServlet {
             session.setAttribute("userName", userName);
             session.setAttribute("message", result);
             session.setAttribute("status", "no");
+            if(userName.charAt(0)=='_'){
+                Admin admin = new Admin();
+                if(admin.checkAdmin(userName,passWord)){
+                    session.setAttribute("status","admin");
+                    session.setAttribute("shopClass","user");
+                    resp.sendRedirect("../ManagePage.jsp");
+                    return;
+                }
+            }
             int check = userCheck.LoginCheck(userName, passWord);
             if (check == 1) {
                 userCheck = userCheck.getUserInfo(userName);
@@ -52,23 +63,25 @@ public class Login extends HttpServlet {
             } else if (check == 0) {
                 result = "密码有误，请重新输入！";
                 req.setAttribute("message", result);
+                System.out.println(3);
                 resp.sendRedirect("../Login.jsp");
             } else if (check == -1) {
                 result = "该用户不存在，请先注册！";
                 req.setAttribute("messahe", result);
+                System.out.println(4);
                 resp.sendRedirect("../Login.jsp");
             } else if (check == -2) {
                 result = "数据库连接出错,请通知管理员解决！";
                 req.setAttribute("messahe", result);
+                System.out.println(5);
                 resp.sendRedirect("../Login.jsp");
             } else {
                 result = "未知错误发生！请通知管理员解决！";
                 req.setAttribute("messahe", result);
+                System.out.println(6);
                 resp.sendRedirect("../Login.jsp");
             }
         }
-
-
     }
 
     @Override

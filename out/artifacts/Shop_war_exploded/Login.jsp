@@ -38,12 +38,25 @@
   <div class="bg_01">
 	  <div class="bg_02">
 		  <p class="header">GameShop</p>
-		  <button type="button" class="bg_02_bt" style="margin-left: 150px">Home</button>
-		  <button type="button" class="bg_02_bt">Mall</button>
+		  <button type="button" class="bg_02_bt" style="margin-left: 150px" onclick="javascript:window.location.href='index.jsp'">Home</button>
+		  <button type="button" class="bg_02_bt" onclick="javascript:window.location.href='GoodsPage.jsp'">Mall</button>
 		  <button type="button" class="bg_02_bt">Category</button>
 		  <button type="button" class="bg_02_bt">Activity</button>
 		  <button type="button" class="bg_02_bt">About</button>
-		  <button type="button" class="bg_02_bt" style="margin-left: 150px">Login</button>
+		  <% String userName = (String) session.getAttribute("userName");
+			  String status = (String) session.getAttribute("status");
+			  if(userName != null && status.equals("yes")){
+		  %>
+		  <a style="margin-left: 80px" href="PersonalInfo.jsp" ><%=userName%></a>
+		  <a style="margin-left: 5px" href="ShopCar.jsp" >ShopCar</a>
+		  <a style="margin-left: 5px" href="controller/Logout" methods="get">Logout</a>
+		  <%}
+		  else {
+		  %>
+		  <a style="margin-left: 150px" href="Login.jsp" >Login</a>
+		  <%
+			  }
+		  %>
 	  </div>
 	  <div class="Login_bg_01">
 		  <div class="Login_bg_03">
@@ -69,8 +82,10 @@
 						<% }
 						%>
 				  </form>
-
+				  <button class="Login_register" onclick="javascript:window.location.href='Register.jsp'" >Register</button>
+				  <button class="Login_register" style="margin-left: 10px; font-size: 10px" >Forget Password</button>
 			  </div>
+
 		  </div>
 	  </div>
 	  <div class="Login_bg_02">
