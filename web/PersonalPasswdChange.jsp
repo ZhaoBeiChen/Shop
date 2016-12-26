@@ -37,7 +37,6 @@
 
 </head>
 <body>
-<% request.getSession().setAttribute("NowPage","PersonalInfo"); %>
 <div class="bg_01">
     <div class="bg_02">
         <p class="header">GameShop</p>

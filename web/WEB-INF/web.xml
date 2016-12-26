@@ -138,4 +138,40 @@
         <servlet-name>M_DelDeleteUser</servlet-name>
         <url-pattern>/controller/manage/M_DelDeleteUser</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SendEmails</servlet-name>
+        <servlet-class>controller.SendEmail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SendEmails</servlet-name>
+        <url-pattern>/controller/SendEmail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ResetPassword</servlet-name>
+        <servlet-class>controller.ResetPassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResetPassword</servlet-name>
+        <url-pattern>/controller/ResetPassword</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>M_DelGoodsInfoChange</servlet-name>
+        <servlet-class>controller.manage.M_DelGoodsInfoChange</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>M_DelGoodsInfoChange</servlet-name>
+        <url-pattern>/controller/manage/M_DelGoodsInfoChange</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>M_DelDeleteGoods</servlet-name>
+        <servlet-class>controller.manage.M_DelDeleteGoods</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>M_DelDeleteGoods</servlet-name>
+        <url-pattern>/controller/manage/M_DelDeleteGoods</url-pattern>
+    </servlet-mapping>
 </web-app>

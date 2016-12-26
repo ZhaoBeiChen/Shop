@@ -1,27 +1,22 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: asus-pc
-  Date: 2016/12/3
-  Time: 16:14
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.lang.*" %>
-
 <html>
+<% request.getSession().setAttribute("NowPage", "index"); %>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上面3个meta标签必须置于最上面 -->
 
-    <title>Shop</title>
+    <title>ForgetPassword</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
     <meta http-equiv="description" content="This is my page">
     <link rel="stylesheet" type="text/css" href="css/cssOfIndex.css">
+    <link rel="stylesheet" type="text/css" href="css/cssOfForgetPassword.css">
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -38,13 +33,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-<% request.getSession().setAttribute("NowPage", "index"); %>
-<% request.getSession().setAttribute("shopClass", "all");%>
-<%
-    if(request.getSession().getAttribute("status") == null) {
-        request.getSession().setAttribute("status", "no");
-    }
-%>
 <div class="bg_01">
     <div class="bg_02">
         <p class="header">GameShop</p>
@@ -56,44 +44,28 @@
         <% String userName = (String) session.getAttribute("userName");
             String status = (String) session.getAttribute("status");
             if(userName != null && status.equals("yes")){
-                %>
+        %>
         <a style="margin-left: 80px" href="PersonalInfo.jsp" ><%=userName%></a>
         <a style="margin-left: 5px" href="ShopCar.jsp" >ShopCar</a>
         <a style="margin-left: 5px" href="controller/Logout" methods="get">Logout</a>
-            <%}
-            else {
-                %>
+        <%}
+        else {
+        %>
         <a style="margin-left: 150px" href="Login.jsp" >Login</a>
         <%
             }
-            %>
+        %>
     </div>
-    <div class="bg_03" style="background-image: url(resource/index.jpg)">
-
-    </div>
-    <div class="bg_04" >
-        <div class="bg_04_01" style="float: left; margin-left: 25px; margin-top: 25px; background-image: url(resource/goods_01_index.jpg)" onclick="javascript:window.location.href='GoodsPage.jsp'">
-
-        </div>
-        <div class="bg_04_01" style="margin-left: 487.5px; margin-top: 25px; background-image: url(resource/goods_02_index.jpg)" onclick="javascript:window.location.href='GoodsPage.jsp'">
-
-        </div>
-        <div class="bg_04_01" style="float: left; margin-left: 25px; margin-top: 25px; background-image: url(resource/goods_03_index.jpg)" onclick="javascript:window.location.href='GoodsPage.jsp'">
+    <div class="ForgetPassword_bg_01">
+        <div class="ForgetPassword_bg_02">
+            <form action="controller/SendEmail" method="post">
+                <p class="ForgetPassword_header"><font color="gray">Input UserID:</font></p>
+                <input class="ForgetPassword_userID" type="text" name="ForgetPW_userID"/>
+                <input class="ForgetPassword_but" type="submit" value="Send"/>
+            </form>
 
         </div>
-        <div class="bg_04_01" style="margin-left: 487.5px; margin-top: 25px; background-image: url(resource/goods_04_index.jpg)" onclick="javascript:window.location.href='GoodsPage.jsp'">
-
-        </div>
-    </div>
-    <div class="bg_05">
-
     </div>
 </div>
-
-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>

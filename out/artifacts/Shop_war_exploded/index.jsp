@@ -68,20 +68,20 @@
             }
             %>
     </div>
-    <div class="bg_03">
+    <div class="bg_03" style="background-image: url(resource/index.jpg)">
 
     </div>
     <div class="bg_04" >
-        <div class="bg_04_01" style="float: left; margin-left: 25px; margin-top: 25px">
+        <div class="bg_04_01" style="float: left; margin-left: 25px; margin-top: 25px; background-image: url(resource/goods_01_index.jpg)" onclick="javascript:window.location.href='GoodsPage.jsp'">
 
         </div>
-        <div class="bg_04_01" style="margin-left: 487.5px; margin-top: 25px">
+        <div class="bg_04_01" style="margin-left: 487.5px; margin-top: 25px; background-image: url(resource/goods_02_index.jpg)" onclick="javascript:window.location.href='GoodsPage.jsp'">
 
         </div>
-        <div class="bg_04_01" style="float: left; margin-left: 25px; margin-top: 25px">
+        <div class="bg_04_01" style="float: left; margin-left: 25px; margin-top: 25px; background-image: url(resource/goods_03_index.jpg)" onclick="javascript:window.location.href='GoodsPage.jsp'">
 
         </div>
-        <div class="bg_04_01" style="margin-left: 487.5px; margin-top: 25px">
+        <div class="bg_04_01" style="margin-left: 487.5px; margin-top: 25px; background-image: url(resource/goods_04_index.jpg)" onclick="javascript:window.location.href='GoodsPage.jsp'">
 
         </div>
     </div>

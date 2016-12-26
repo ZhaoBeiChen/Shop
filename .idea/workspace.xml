@@ -2,62 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49b1056b-6bfd-463f-853e-bca498cc25f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/classes/controller/DelChangeShopCarNum.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/classes/controller/DelDeleteShopCar.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/resource/goods_01_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/resource/goods_02_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resource/goods_01_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/resource/goods_02_small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/DelChangeShopCarNum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/DelDeleteShopCar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/DelPersonalInfoChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/DelPersonalPasswdChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/DelPlaceTheOrder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/DelRegister.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/manage/DelManageInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/manage/M_DelDeleteUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/manage/M_DelPersonalInfoChange.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/manage/M_DelShopClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/struct/Admin.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/ManagePage.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/PersonalInfoChange.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/PersonalPasswdChange.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Register.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/ShopCar.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/cssOfPersonalInfoChange.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/ShopCar.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/classes/controller/DelAddShopCar.class" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/classes/controller/DelAddShopCar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/classes/controller/Login.class" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/classes/controller/Login.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/classes/controller/Logout.class" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/classes/controller/Logout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/classes/model/struct/ShopCar.class" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/classes/model/struct/ShopCar.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/classes/model/struct/User.class" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/classes/model/struct/User.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/ResetPassword.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/SendEmail.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/manage/M_DelDeleteGoods.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/controller/manage/M_DelGoodsInfoChange.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/ForgetPassWordPage.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/Manage_goods.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/ResetThePassword.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/cssOfForgetPassword.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/classes/model/struct/Goods.class" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/classes/model/struct/Goods.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/resource/goods_01.jpg" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/resource/goods_01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/resource/goods_01_big.jpg" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/resource/goods_01_big.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/resource/goods_01_small.jpg" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/resource/goods_01_small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/resource/goods_02.jpg" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/resource/goods_02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/resource/goods_02_big.jpg" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/resource/goods_02_big.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/resource/goods_02_small.jpg" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/resource/goods_02_small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resource/goods_01.jpg" afterPath="$PROJECT_DIR$/web/resource/goods_01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resource/goods_01_big.jpg" afterPath="$PROJECT_DIR$/web/resource/goods_01_big.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resource/goods_01_small.jpg" afterPath="$PROJECT_DIR$/web/resource/goods_01_small.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resource/goods_02.jpg" afterPath="$PROJECT_DIR$/web/resource/goods_02.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resource/goods_02_big.jpg" afterPath="$PROJECT_DIR$/web/resource/goods_02_big.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/resource/goods_02_small.jpg" afterPath="$PROJECT_DIR$/web/resource/goods_02_small.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Shop.iml" afterPath="$PROJECT_DIR$/Shop.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/GoodsInfo.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/GoodsInfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/GoodsPage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/GoodsPage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/Login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/Login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/PersonalInfo.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/PersonalInfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/ShopCar.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/ShopCar.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/PersonalPasswdChange.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/PersonalPasswdChange.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/css/cssOfGoodsPage.css" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/css/cssOfGoodsPage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/css/cssOfLogin.css" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/css/cssOfLogin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/css/cssOfPersonalInfo.css" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/css/cssOfPersonalInfo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/css/cssOfShopCar.css" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/css/cssOfShopCar.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Shop_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/DelAddShopCar.java" afterPath="$PROJECT_DIR$/src/controller/DelAddShopCar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/Login.java" afterPath="$PROJECT_DIR$/src/controller/Login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/Logout.java" afterPath="$PROJECT_DIR$/src/controller/Logout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/struct/ShopCar.java" afterPath="$PROJECT_DIR$/src/model/struct/ShopCar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/struct/User.java" afterPath="$PROJECT_DIR$/src/model/struct/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/GoodsInfo.jsp" afterPath="$PROJECT_DIR$/web/GoodsInfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/GoodsPage.jsp" afterPath="$PROJECT_DIR$/web/GoodsPage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Login.jsp" afterPath="$PROJECT_DIR$/web/Login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/PersonalInfo.jsp" afterPath="$PROJECT_DIR$/web/PersonalInfo.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/PersonalPasswdChange.jsp" afterPath="$PROJECT_DIR$/web/PersonalPasswdChange.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/cssOfGoodsPage.css" afterPath="$PROJECT_DIR$/web/css/cssOfGoodsPage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/cssOfLogin.css" afterPath="$PROJECT_DIR$/web/css/cssOfLogin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/cssOfPersonalInfo.css" afterPath="$PROJECT_DIR$/web/css/cssOfPersonalInfo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/cssOfShopCar.css" afterPath="$PROJECT_DIR$/web/css/cssOfShopCar.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -77,77 +51,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ManagePage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/ManagePage.jsp">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+            <state relative-caret-position="-190">
+              <caret line="23" column="69" lean-forward="true" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
               <folding>
-                <element signature="e#2264#2270#0#JAVA" expanded="true" />
-                <element signature="e#2322#2329#0#JAVA" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Manage_person.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/Manage_person.jsp">
+      <file leaf-file-name="GoodsInfo.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/GoodsInfo.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="25" column="47" lean-forward="true" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-              <folding>
-                <element signature="n#style#0;n#input#1;n#form#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="M_DelDeleteUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/manage/M_DelDeleteUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DelDeleteShopCar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/DelDeleteShopCar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="M_DelPersonalInfoChange.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/manage/M_DelPersonalInfoChange.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="41" column="82" lean-forward="false" selection-start-line="41" selection-start-column="82" selection-end-line="41" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonalInfoChange.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/PersonalInfoChange.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DelPersonalInfoChange.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/DelPersonalInfoChange.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+            <state relative-caret-position="331">
+              <caret line="59" column="74" lean-forward="false" selection-start-line="59" selection-start-column="67" selection-end-line="59" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -156,28 +80,65 @@
       <file leaf-file-name="DelGoodsInfo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/DelGoodsInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+            <state relative-caret-position="304">
+              <caret line="22" column="57" lean-forward="true" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DelManageInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/manage/DelManageInfo.java">
+      <file leaf-file-name="GoodsPage.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/GoodsPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="50" />
+            <state relative-caret-position="1577">
+              <caret line="83" column="17" lean-forward="false" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/struct/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="129" column="77" lean-forward="true" selection-start-line="129" selection-start-column="77" selection-end-line="129" selection-end-column="77" />
+            <state relative-caret-position="2033">
+              <caret line="142" column="47" lean-forward="false" selection-start-line="142" selection-start-column="47" selection-end-line="142" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Goods.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/struct/Goods.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="235" column="63" lean-forward="false" selection-start-line="235" selection-start-column="63" selection-end-line="235" selection-end-column="63" />
+              <folding>
+                <marker date="1482750756163" expanded="true" signature="2532:2666" ph="insert into tb_goods... " />
+                <marker date="1482750756163" expanded="true" signature="3591:3627" ph="delete from " />
+                <marker date="1482750756163" expanded="true" signature="4089:4190" ph="update tb_go... " />
+                <marker date="1482750756163" expanded="true" signature="4992:5030" ph="select * fro... tb_goods" />
+                <marker date="1482750756163" expanded="true" signature="6056:6096" ph="select * fro... tb_goods" />
+                <marker date="1482750756163" expanded="true" signature="7105:7127" ph="select * fro... tb_goods" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonalPasswdChange.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/PersonalPasswdChange.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="487">
+              <caret line="75" column="10" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="75" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cssOfIndex.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/css/cssOfIndex.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -189,10 +150,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="CSS File" />
-        <option value="Jsp File" />
         <option value="Html5" />
         <option value="Class" />
+        <option value="CSS File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -207,16 +168,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/model/DAO/dataConnecting.java" />
-        <option value="$PROJECT_DIR$/src/model/DAO/databaseCon.java" />
-        <option value="$PROJECT_DIR$/web/LoginCheck.jsp" />
-        <option value="$PROJECT_DIR$/src/servlet/Login.java" />
-        <option value="$PROJECT_DIR$/src/controller/servlet/Login.java" />
-        <option value="$PROJECT_DIR$/web/GoodsPage.html" />
-        <option value="$PROJECT_DIR$/web/css/cssOfIndex.css" />
-        <option value="$PROJECT_DIR$/web/PersonalInfo.html" />
         <option value="$PROJECT_DIR$/web/GoodsInfo.html" />
-        <option value="$PROJECT_DIR$/src/model/struct/Goods.java" />
         <option value="$PROJECT_DIR$/src/model/struct/Order.java" />
         <option value="$PROJECT_DIR$/src/controller/DelShopClass.java" />
         <option value="$PROJECT_DIR$/src/controller/DelGoodsInfo.java" />
@@ -224,8 +176,6 @@
         <option value="$PROJECT_DIR$/web/turnPage_01.jsp" />
         <option value="$PROJECT_DIR$/web/ShopCar.html" />
         <option value="$PROJECT_DIR$/web/css/cssOfGoodsPage.css" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/GoodsPage.jsp" />
         <option value="$PROJECT_DIR$/web/GoodsInfo.jsp" />
         <option value="$PROJECT_DIR$/src/controller/DelAddShopCar.java" />
         <option value="$PROJECT_DIR$/src/controller/DelChangeShopCarNum.java" />
@@ -239,10 +189,8 @@
         <option value="$PROJECT_DIR$/web/css/cssOfPersonalInfo.css" />
         <option value="$PROJECT_DIR$/web/PersonalInfo.jsp" />
         <option value="$PROJECT_DIR$/web/css/cssOfLogin.css" />
-        <option value="$PROJECT_DIR$/web/PersonalPasswdChange.jsp" />
         <option value="$PROJECT_DIR$/web/PersonalInfoChange.jsp" />
         <option value="$PROJECT_DIR$/src/controller/DelPersonalPasswdChange.java" />
-        <option value="$PROJECT_DIR$/web/Login.jsp" />
         <option value="$PROJECT_DIR$/web/Register.jsp" />
         <option value="$PROJECT_DIR$/src/controller/DelRegister.java" />
         <option value="$PROJECT_DIR$/web/ManagePage.html" />
@@ -254,10 +202,23 @@
         <option value="$PROJECT_DIR$/src/controller/manage/DelManageInfo.java" />
         <option value="$PROJECT_DIR$/web/ManagePage.jsp" />
         <option value="$PROJECT_DIR$/src/controller/manage/M_DelPersonalInfoChange.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/controller/DelPersonalInfoChange.java" />
-        <option value="$PROJECT_DIR$/web/Manage_person.jsp" />
         <option value="$PROJECT_DIR$/src/controller/manage/M_DelDeleteUser.java" />
+        <option value="$PROJECT_DIR$/web/css/cssOfForgetPassword.css" />
+        <option value="$PROJECT_DIR$/web/Login.jsp" />
+        <option value="$PROJECT_DIR$/web/PersonalPasswdChange.jsp" />
+        <option value="$PROJECT_DIR$/web/ResetThePassword.jsp" />
+        <option value="$PROJECT_DIR$/src/controller/ResetPassword.java" />
+        <option value="$PROJECT_DIR$/src/controller/SendEmail.java" />
+        <option value="$PROJECT_DIR$/web/ForgetPassWordPage.jsp" />
+        <option value="$PROJECT_DIR$/web/Manage_person.jsp" />
+        <option value="$PROJECT_DIR$/src/controller/manage/M_DelGoodsInfoChange.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/Manage_goods.jsp" />
+        <option value="$PROJECT_DIR$/src/controller/manage/M_DelDeleteGoods.java" />
+        <option value="$PROJECT_DIR$/web/GoodsPage.jsp" />
+        <option value="$PROJECT_DIR$/src/model/struct/Goods.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
       </list>
     </option>
   </component>
@@ -280,10 +241,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1924" />
-    <option name="height" value="1048" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -303,8 +264,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -346,6 +307,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -439,7 +418,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/迅雷下载/javamail-1.4.7/lib/pop3.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -758,6 +737,7 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -895,7 +875,6 @@
     </configuration>
     <configuration default="false" name="Tomcat8.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.39" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="F:\JDK8\jre">
       <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Shop/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Shop:war exploded">
@@ -1019,12 +998,14 @@
       <workItem from="1482481619337" duration="33000" />
       <workItem from="1482481686636" duration="3003000" />
       <workItem from="1482563905335" duration="124000" />
-      <workItem from="1482639722032" duration="11277000" />
+      <workItem from="1482639722032" duration="18593000" />
+      <workItem from="1482722459861" duration="11456000" />
+      <workItem from="1482750483165" duration="1457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161290000" />
+    <option name="totallyTimeSpent" value="181519000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1036,8 +1017,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1924" height="1048" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1059,10 +1040,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14442013" sideWeight="0.49785638" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23861171" sideWeight="0.49785638" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23175965" sideWeight="0.45022288" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23175965" sideWeight="0.5497771" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.195629" sideWeight="0.4454023" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19349681" sideWeight="0.5545977" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1121,6 +1102,9 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="2" />
@@ -1132,91 +1116,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="48" column="23" lean-forward="false" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/DAO/DataBaseInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/DAO/dataConnecting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/struct/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/DAO/databaseCon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/DAO/dataBaseDestory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/DAO/databaseCon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="60" lean-forward="false" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/DAO/dataBaseDestory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/DAO/dataConnecting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="9" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/cssOfGoodsPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="55" column="18" lean-forward="false" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/cssOfIndex.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="51" column="17" lean-forward="false" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Shop.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1252,24 +1151,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/GoodsInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/struct/ShopCar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="260" column="13" lean-forward="false" selection-start-line="260" selection-start-column="13" selection-end-line="260" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/struct/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="142" column="47" lean-forward="false" selection-start-line="142" selection-start-column="47" selection-end-line="142" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -1301,46 +1186,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/PersonalInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="88" column="72" lean-forward="false" selection-start-line="88" selection-start-column="72" selection-end-line="88" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/cssOfPersonalInfo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="54" column="22" lean-forward="false" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/cssOfLogin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="101" column="20" lean-forward="false" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/cssOfPersonalInfoChange.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/DelPersonalPasswdChange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/PersonalPasswdChange.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1349">
-          <caret line="71" column="107" lean-forward="false" selection-start-line="71" selection-start-column="107" selection-end-line="71" selection-end-column="107" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1369,54 +1218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/GoodsPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="70" column="62" lean-forward="false" selection-start-line="70" selection-start-column="62" selection-end-line="70" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="45" column="61" lean-forward="false" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/struct/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="241" column="24" lean-forward="false" selection-start-line="241" selection-start-column="24" selection-end-line="241" selection-end-column="24" />
-          <folding>
-            <element signature="e#6393#6399#0" expanded="true" />
-            <marker date="1482663129379" expanded="true" signature="2404:2493" ph="insert into tb_user... " />
-            <marker date="1482663129379" expanded="true" signature="3297:3333" ph="delete from " />
-            <marker date="1482663129379" expanded="true" signature="3786:3869" ph="update tb_us... " />
-            <marker date="1482663129379" expanded="true" signature="4642:4680" ph="select * fro... tb_user" />
-            <marker date="1482663129379" expanded="true" signature="5356:5394" ph="select * fro... tb_user" />
-            <marker date="1482663129379" expanded="true" signature="6425:6446" ph="select * fro... tb_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/DelShopClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1429,61 +1230,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/DelGoodsInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Manage_person.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="63" column="125" lean-forward="true" selection-start-line="63" selection-start-column="125" selection-end-line="63" selection-end-column="125" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/manage/DelManageInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/ManagePage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-          <folding>
-            <element signature="e#2264#2270#0#JAVA" expanded="true" />
-            <element signature="e#2322#2329#0#JAVA" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/PersonalInfoChange.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="129" column="77" lean-forward="true" selection-start-line="129" selection-start-column="77" selection-end-line="129" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Manage_person.html" />
     <entry file="file://$PROJECT_DIR$/src/controller/DelPersonalInfoChange.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1496,14 +1246,170 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/cssOfPersonalInfoChange.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/cssOfForgetPassword.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/JDK8/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="1915" column="0" lean-forward="false" selection-start-line="1915" selection-start-column="0" selection-end-line="1915" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="84" column="124" lean-forward="true" selection-start-line="84" selection-start-column="124" selection-end-line="84" selection-end-column="124" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/struct/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="195" column="60" lean-forward="false" selection-start-line="195" selection-start-column="60" selection-end-line="195" selection-end-column="60" />
+          <folding>
+            <marker date="1482663129379" expanded="true" signature="2404:2493" ph="insert into tb_user... " />
+            <marker date="1482663129379" expanded="true" signature="3297:3333" ph="delete from " />
+            <marker date="1482663129379" expanded="true" signature="3786:3869" ph="update tb_us... " />
+            <marker date="1482663129379" expanded="true" signature="4642:4680" ph="select * fro... tb_user" />
+            <marker date="1482663129379" expanded="true" signature="5356:5394" ph="select * fro... tb_user" />
+            <marker date="1482663129379" expanded="true" signature="6425:6446" ph="select * fro... tb_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/DelPersonalPasswdChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="20" column="66" lean-forward="true" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/PersonalInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="65" column="84" lean-forward="false" selection-start-line="65" selection-start-column="84" selection-end-line="65" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/PersonalInfoChange.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/ResetPassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="27" column="50" lean-forward="false" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/SendEmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="47" column="88" lean-forward="false" selection-start-line="47" selection-start-column="88" selection-end-line="47" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ResetThePassword.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="791">
+          <caret line="71" column="72" lean-forward="true" selection-start-line="71" selection-start-column="72" selection-end-line="71" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="45" column="61" lean-forward="true" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ForgetPassWordPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="61" column="66" lean-forward="false" selection-start-line="61" selection-start-column="66" selection-end-line="61" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/manage/DelManageInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/cssOfPersonalInfo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="54" column="22" lean-forward="false" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Manage_person.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/manage/M_DelPersonalInfoChange.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="41" column="82" lean-forward="false" selection-start-line="41" selection-start-column="82" selection-end-line="41" selection-end-column="82" />
+        <state relative-caret-position="401">
+          <caret line="41" column="84" lean-forward="false" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/ManagePage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="85" column="197" lean-forward="true" selection-start-line="85" selection-start-column="197" selection-end-line="85" selection-end-column="197" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/cssOfGoodsPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/manage/M_DelGoodsInfoChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1511,18 +1417,108 @@
     <entry file="file://$PROJECT_DIR$/src/controller/manage/M_DelDeleteUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="22" column="54" lean-forward="true" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+          <caret line="22" column="54" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="22" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Manage_person.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="47" lean-forward="true" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        <state relative-caret-position="525">
+          <caret line="171" column="14" lean-forward="true" selection-start-line="171" selection-start-column="14" selection-end-line="171" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Manage_goods.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="78" column="59" lean-forward="false" selection-start-line="78" selection-start-column="39" selection-end-line="78" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/manage/M_DelDeleteGoods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/struct/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2033">
+          <caret line="142" column="47" lean-forward="false" selection-start-line="142" selection-start-column="47" selection-end-line="142" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/GoodsPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1577">
+          <caret line="83" column="17" lean-forward="false" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/struct/Goods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="235" column="63" lean-forward="false" selection-start-line="235" selection-start-column="63" selection-end-line="235" selection-end-column="63" />
           <folding>
-            <element signature="n#style#0;n#input#1;n#form#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1482750756163" expanded="true" signature="2532:2666" ph="insert into tb_goods... " />
+            <marker date="1482750756163" expanded="true" signature="3591:3627" ph="delete from " />
+            <marker date="1482750756163" expanded="true" signature="4089:4190" ph="update tb_go... " />
+            <marker date="1482750756163" expanded="true" signature="4992:5030" ph="select * fro... tb_goods" />
+            <marker date="1482750756163" expanded="true" signature="6056:6096" ph="select * fro... tb_goods" />
+            <marker date="1482750756163" expanded="true" signature="7105:7127" ph="select * fro... tb_goods" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/PersonalPasswdChange.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="75" column="10" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="75" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/cssOfIndex.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/DelGoodsInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="57" lean-forward="true" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/GoodsInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="59" column="74" lean-forward="false" selection-start-line="59" selection-start-column="67" selection-end-line="59" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="23" column="69" lean-forward="true" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

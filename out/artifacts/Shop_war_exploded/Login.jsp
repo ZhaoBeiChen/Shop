@@ -83,7 +83,7 @@
 						%>
 				  </form>
 				  <button class="Login_register" onclick="javascript:window.location.href='Register.jsp'" >Register</button>
-				  <button class="Login_register" style="margin-left: 10px; font-size: 10px" >Forget Password</button>
+				  <button class="Login_register" style="margin-left: 10px; font-size: 10px" onclick="javascript:window.location.href='ForgetPassWordPage.jsp'">Forget Password</button>
 			  </div>
 
 		  </div>
