@@ -78,7 +78,7 @@
     }
     for(int i=0; i<size; i++){
     %>
-    <div class="goods">
+    <div class="goods" <% if(classes.equals("goods")) { %> style="background-image: url(${ pageContext.request.contextPath }/<%=goodslist.get(i).getGoodsURL()%>.jpg)" <% } %>>
       <div class="goodsHeader">
         <form action="controller/manage/DelManageInfo" method="get">
           <% if(classes.equals("goods")) {%><input type="hidden" name="thing_id" value="<%=goodslist.get(i).getGoodsID() %>" /><%}%>
